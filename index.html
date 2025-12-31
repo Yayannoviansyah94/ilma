@@ -99,9 +99,18 @@ button:hover{opacity:.9}
 
 <body>
 
-<audio id="music" loop>
-    <source src="monokrom.mp3" type="audio/mp3">
+<audio id="bgMusic" loop>
+  <source src="tulus-monokrom.mp3" type="audio/mpeg">
 </audio>
+
+<button onclick="playMusic()">▶ Putar Musik</button>
+
+<script>
+function playMusic() {
+  const music = document.getElementById("bgMusic");
+  music.play();
+}
+</script>
 
 <!-- STEP 1 -->
 <div class="container" id="step1">
@@ -214,3 +223,4 @@ function startConfetti(){
 
 </body>
 </html>
+
